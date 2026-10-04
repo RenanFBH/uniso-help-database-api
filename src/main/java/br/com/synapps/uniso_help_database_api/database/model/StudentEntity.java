@@ -1,4 +1,5 @@
 package br.com.synapps.uniso_help_database_api.database.model;
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;

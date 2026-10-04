@@ -1,6 +1,8 @@
 package br.com.synapps.uniso_help_database_api.controller;
+
 import br.com.synapps.uniso_help_database_api.database.model.CourseEntity;
 import br.com.synapps.uniso_help_database_api.service.CourseService;
+
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.DeleteMapping;

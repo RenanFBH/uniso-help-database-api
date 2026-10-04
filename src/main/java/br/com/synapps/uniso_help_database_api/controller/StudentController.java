@@ -2,6 +2,7 @@ package br.com.synapps.uniso_help_database_api.controller;
 
 import br.com.synapps.uniso_help_database_api.database.model.StudentEntity;
 import br.com.synapps.uniso_help_database_api.service.StudentService;
+
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -21,12 +22,18 @@ import java.util.List;
 @RequiredArgsConstructor
 public class StudentController {
 
-   private final StudentService studentService;
+    private final StudentService studentService;
 
     @GetMapping
     @ResponseStatus(HttpStatus.OK)
     public List<StudentEntity> findAll() {
         return studentService.findAll();
+    }
+
+    @GetMapping(path = "/{id}")
+    @ResponseStatus(HttpStatus.OK)
+    public StudentEntity findById(@PathVariable Integer id) {
+        return studentService.findById(id);
     }
 
     @PostMapping

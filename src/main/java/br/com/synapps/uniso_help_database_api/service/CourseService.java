@@ -1,6 +1,8 @@
 package br.com.synapps.uniso_help_database_api.service;
+
 import br.com.synapps.uniso_help_database_api.database.model.CourseEntity;
 import org.springframework.stereotype.Service;
+
 import java.util.ArrayList;
 import java.util.List;
 
